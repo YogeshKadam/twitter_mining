@@ -1,0 +1,24 @@
+<html>
+ <head>
+   <title>Submitted form</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+ </head>
+ <body>
+   <div id="container">
+     <div class="pagetitle">
+       <h1>Form submitted : Data stored in Google Datastore</h1>
+     </div>
+     <div id="main">
+       <h3><p>Thanks for your submission!!!</p>
+       <h3><p>Here's a review of the information that you requested:</p>
+       <p>
+          <h4><strong>Tweet ID </strong>: {{tweet_id}} <br>
+          <h4><strong>Tweet Text </strong>: {{tweet_text}} <br>
+          <h4><strong>Tweet Favorites Count </strong>: {{tweet_favorite_count}} <br>
+          <h4><strong>Tweet Retweet Count </strong>: {{tweet_retweet_count}} <br>
+       </p>
+     </div>
+     <a href="/form">Home</a>
+   </div>
+ </body>
+</html>

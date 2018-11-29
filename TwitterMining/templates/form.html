@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Twitter Mining</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="pagetitle">
+        <h1>Twitter Mining</h1>
+      </div>
+      <div id="main">
+        <form method="post" action="{{ url_for('submitted_form') }}">
+          <label for="tweet_id">Enter Public Tweet ID :</label>
+          <input type="text" name="tweet_id"><br />
+          <input type="submit">
+        </form>
+      </div>
+      <br>
+      <div id="display_all">
+        <a href="/display">Display All Tweets from Datastore</a>
+      </div>
+      <br>
+      <div id="search">
+        <form method="post" action="{{ url_for('search_datastore_retrieve_form') }}">
+          <h4><label for="tweet_text">Enter Tweet Text to be searched :</label>
+          <input type="text" name="tweet_text"><br />
+          <input type="submit" value="Search">
+        </form>
+    </div>
+  </body>
+</html>

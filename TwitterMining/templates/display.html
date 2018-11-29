@@ -1,0 +1,32 @@
+<html>
+ <head>
+   <title>Display Tweets</title>
+   <link rel="stylesheet" type="text/css" href="/static/style.css">
+ </head>
+ <body>
+   <div id="container">
+     <div class="pagetitle">
+       <h1>Displaying all data tweets Google Datastore</h1>
+     </div>
+     <div id="main">
+     <table border=1>
+     <tr>
+        <th>Tweet_Id</th>
+        <th>Tweet_Text</th>
+        <th>Favorite_Count</th>
+        <th>Retweet_Count</th>
+     </tr>
+     {% for item in data %}
+     <tr>
+        <td>{{item.tweet_id}}</td>
+        <td>{{item.tweet_text}}</td>
+        <td>{{item.favorite_count}}</td>
+        <td>{{item.retweet_count}}</td>
+     </tr>
+     {% endfor %}
+     </table>
+     </div>
+     <a href="/form">Home</a>
+   </div>
+ </body>
+</html>
